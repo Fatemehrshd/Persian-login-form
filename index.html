@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Fatemeh Rashidi">
+        <meta name="description" content="Dinamic login form">
+        <meta name="keywords" content="login form, dinamic">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Login Form</title>
+    </head>
+    <body>
+
+        <button class="login" onclick="login_form()">ثبت نام</button>
+
+        <div class="form">
+
+            <form class="container">
+
+                <div class="child1">
+                    <span id="sabte-nam">ثبت نام</span>
+                    <div class="mode">
+                        <input type="checkbox" onclick="dark_mood()" id="mode"><span>حالت تاریک</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="name">
+                    <label>نام و نام خانوادگی</label><br>
+                    <input type="text" id="name" placeholder="نام و نام خانوادگی"><br><br>
+                </div>
+                    
+                
+                <div id="email">
+                    <label>ایمیل</label><br>
+                    <input type="email" id="email" placeholder="ایمیل"><br><br>
+                </div>
+                
+                <p id="security-sen" style="color: darkblue; font-size: 13px; text-align: center; font-weight: bold;">*ایمیل شما به کاربران نمایش داده نمی شود*</p>
+                
+                <div id="password">
+                    <label>کلمه عبور</label><br>
+                    <input type="password" id="password-inp" placeholder="کلمه عبور"><br><br>
+                </div>
+                
+                <!-- <br>\\ -->
+                
+                <div>
+                    <input type="radio" name="select" id="single" onclick="is_single()"><span>مجرد</span>
+                    <br>
+                    <input type="radio" name="select" id="married" onclick="got_married()"><span>متاهل</span>
+                </div>
+
+                <div class="hw-name">
+                    <label>نام همسر</label><br>
+                    <input type="text" id="hw-name" placeholder="نام همسر"><br>
+                </div>
+
+                <br>
+
+                <div class="have-child">
+                    <input type="checkbox" id="have-child-input" onclick="select_have_child()"><span>دارای فرزند</span>
+                </div>
+ 
+                <br>
+ 
+                <div class="number-of-children">
+                    <button type="button" class="btn" style="background-color: red;" onclick="decrease_children()">-</button>
+                    <button type="button" class="btn" style="background-color: green;" onclick="increase_children()">+</button>
+                    <span>فرزندان</span>
+                    <ul class="children_names"></ul>
+                </div>
+
+                <div >
+                    <button type="submit" class="register">ثبت نام</button>
+                </div>
+
+            </form>
+            
+        
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

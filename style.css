@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+hr {
+    width: 100%;
+    margin-right: 0px;
+    position: relative;
+    left: 5px;
+}
+
+.login {
+    position: relative;
+    left: 34.4%;
+    border: 0px;
+    width: 400px;
+    height: 40px;
+    background-color: orange;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#sabte-nam {
+    position: relative;
+    top: 15px;
+}
+
+.mode {
+    position: relative;
+    /* top: 0px; */
+    left: -76%;
+    top: -5px;
+}
+
+.form {
+    display: none;
+}
+
+.hw-name {
+    display: none;
+}
+
+.container {
+    background-color: lightblue;
+    width: 400px;
+    height: 520px;
+    text-align: right;
+    padding: 0 10px 10px 0;
+    margin: 0 auto;
+}
+
+hr {
+    justify-content: center;
+}
+
+input {
+    text-align: right;
+}
+
+button {
+    border: none;
+}
+
+.btn {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.number-of-children {
+    display: none;
+}
+
+/* .have-child {
+    display: none;
+} */
+
+.children_names {
+    padding-right: 0;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.register {
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    background-color: rgb(12, 109, 255, .9);
+    position: absolute;
+    left: 36%;
+    bottom: 30px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 97%;
+}
+
+input[type=email] {
+    width: 97%;
+}
+
+input[type=password] {
+    width: 97%;
+}
